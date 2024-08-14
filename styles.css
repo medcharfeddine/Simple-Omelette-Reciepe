@@ -1,0 +1,165 @@
+/** @format */
+
+@font-face {
+  font-family: Outfit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: young-serif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+  background-color: rgba(243, 229, 216, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Outfit;
+  font-size: 20px;
+  color: rgb(102, 100, 100);
+}
+
+.full {
+  border-radius: 30px;
+  margin: 40px;
+  padding: 20px;
+  background-color: white;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.sec1 {
+  display: flex;
+}
+
+.image {
+  width: 100%;
+}
+
+.image > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: left;
+  color: black;
+  font-family: young-serif;
+  margin: 20px 0;
+}
+
+.prep {
+  background-color: rgba(243, 229, 216, 0.3);
+  border-radius: 10px;
+  padding: 0 20px 20px 20px;
+}
+
+h3 {
+  color: #6b2f49;
+  font-size: 26px;
+  font-family: Outfit;
+}
+
+.prep-info {
+  line-height: 32px;
+}
+
+.prep-info li {
+  padding-left: 20px;
+  color: #6b2f49;
+}
+
+h2 {
+  font-family: young-serif;
+  font-size: 36px;
+  color: #6b2f49;
+  margin: 12px 0px;
+  font-weight: 400;
+}
+
+.ing-info li {
+  padding-left: 20px;
+  line-height: 32px;
+  color: #6b2f49;
+}
+
+.inst-info li {
+  padding-left: 20px;
+  line-height: 32px;
+  color: #6b2f49;
+}
+
+.inst-info li::marker {
+  font-weight: bold;
+}
+
+.line {
+  border: 0.2px solid rgba(175, 175, 175, 0.3);
+  margin: 20px;
+}
+
+tbody {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+#tab1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+#tab2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: calc(1px / 2) solid rgba(122, 122, 122, 0.5);
+  padding: 6px;
+  line-height: 40px;
+  color: rgb(134, 134, 134);
+  font-weight: 400;
+}
+
+td {
+  color: #6b2f49;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0 0 10px 0;
+    padding: 0;
+    background-color: white;
+  }
+  .full {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .image > img {
+    border-radius: 0;
+  }
+}
